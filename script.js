@@ -12,15 +12,16 @@ function calculateLoveScore() {
         result.innerHTML = `${name1} and ${name2} 's Love percentage is ${lovePercentage} %`;
 
 
-        if (lovePercentage <= 30) {
+        if (lovePercentage <30) {
             result.innerHTML += "<br> Not a great match.Keep Looking!";
-            result.style.color = "green";
+            result.style.color = "red";
           } 
           
-          else if (lovePercentage >= 30 && lovePercentage <= 70) {
-            result.innerHTML += "<br> You are a good match.Keep your love going!";
+          else if (lovePercentage >= 30 && lovePercentage <70) {
+            result.innerHTML += "<br> There is potential. Give it a try!";
             result.style.color = "yellow";
           } else {
+            result.innerHTML += "<br> You are a perfect match! Love is in the air";
             result.style.color = "green";
           }
     }
